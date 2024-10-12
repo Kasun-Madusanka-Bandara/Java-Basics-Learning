@@ -28,7 +28,35 @@ public class BodyMassIndexCalculator {
             Overweight: BMI between 25 and 29.9
             Obese: BMI 30 and above
 
-         */
+
+
+        if (bmi > 30){
+            System.out.println("You are categorized as Obese ");
+        }
+        else if (29.9 >= bmi &&  bmi >= 25 ){
+            System.out.println("You are categorized as Overweight ");
+        }
+        else if (24.9 >= bmi && bmi > 18.5){
+            System.out.println("You are categorized as Normal weight ");
+        }
+        else if (bmi < 18.5){
+            System.out.println("You are categorized as Underweight ");
+        }
+        else{
+            System.out.println("Invalid!");
+        }
+        */
+        System.out.println();
+
+        if (bmi < 18.5) {
+            System.out.println("You are underweight.");
+        } else if (bmi >= 18.5 && bmi < 24.9) {
+            System.out.println("You have a normal weight.");
+        } else if (bmi >= 25 && bmi < 29.9) {
+            System.out.println("You are overweight.");
+        } else {
+            System.out.println("You are obese.");
+        }
 
     }
 }
