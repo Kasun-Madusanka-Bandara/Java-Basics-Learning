@@ -25,6 +25,5 @@ public class math_class {
         System.out.println("ceil: "+f);
         System.out.println("floor: "+g);
 
-
     }
 }
